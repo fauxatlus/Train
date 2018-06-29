@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">    <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+<script src="https://cdn.jsdelivr.net/momentjs/2.13.0/moment.min.js"></script>
+</head>
+<body>
+
+<div class ="container">
+
+<div class ="jumbotron bg-primary text-white">
+<h1 class="text-center">Choo Choo</h1>
+<h3 class="text-center ride">Dont be late!</h3>
+</div>
+<div class="row">
+<div class="col-lg-12">
+    
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h3 class="panel-title current"><strong>Current Train Schedule</strong></h3>
+</div>
+<div class="panel-body">
+<table class="table table-hover" id='trainTable'>
+<thead>
+<tr>
+<th>Train Name</th>
+<th>Destination</th>
+<th>Next Arrival</th>
+<th>Frequency(minutes)</th>
+<th>Minutes Away</th>
+</tr>
+</thead>
+<tbody>
+              
+</tbody>
+</table>
+</div>
+</div>
+
+      
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h3 class="panel-title add"><strong>Add Trains</strong></h3>
+</div>
+<div class="panel-body">
+<form>
+<div class="form-group">
+<label for="">Train Name</label>
+<input type="text" class="form-control" id="trainNameInput">
+</div>
+
+<div class="form-group">
+<label for="">Destination</label>
+<input type="text" class="form-control" id="destinationInput">
+</div>
+
+<div class="form-group">
+<label for="">First Train Time (HH:mm - ex: 02:00)</label>
+<input type="text" class="form-control" id="timeInput">
+</div>
+
+<div class="form-group">
+<label for="">Frequency(minutes)</label>
+<input type="text" class="form-control" id="frequencyInput">
+</div>
+          
+<button type="submit" class="btn btn-primary" id="addTrainBtn">Submit</button>
+</form>
+
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<script src='javascript/app.js'></script>
+</body>
+</html>
+</html>
